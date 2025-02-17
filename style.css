@@ -1,0 +1,230 @@
+/* Main CSS */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: gray;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#container {
+    background-color: rgba(223, 224, 226, 0.847);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 827px;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow:auto;
+}
+#container h1 span{
+    display: inline-block;
+    color:transparent;
+    -webkit-text-stroke: 1px rgb(46, 45, 45);
+    font-size: 70px;
+    
+}
+#container h1 span:hover{
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out;
+   
+}
+#list-header {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+/*.blankDiv {
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+#addNoteDiv {
+    background-color: transparent;
+    border:  2px solid rgb(85, 84, 84);
+    padding: 20px;
+    border-radius: 15px;
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addNoteDiv:hover {
+    transition: 0.25s;
+    background-color: rgb(194, 196, 203);
+}
+
+
+#addNoteDiv i {
+    font-size: 20px;
+    color: rgb(71, 70, 83);
+}
+
+
+/* List CSS */
+#list-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+li {
+    background-color: white;
+    color: black;
+    border: none;
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 8px;
+    /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Added to align buttons to the right */
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+li span {
+    font-size: 12px;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow:auto;
+}
+
+#editBtn,
+#deleteBtn {
+  
+  background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    /* Adjusted margin for spacing */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 60px;
+}
+#editBtn img {
+height: 17px;
+width: 17px;
+}
+
+#deleteBtn img {
+    height: 17px;
+    width: 17px;
+    
+}
+
+/* Create Note Popup CSS */
+#popupContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: rgba(223, 224, 226, 0.847);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#popupContainer h1{
+    color:rgb(59, 58, 58);
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btn-container {
+    display: flex;
+}
+
+/* Editing Popup CSS */
+#editing-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#submitBtn,
+#closeBtn {
+    width: 100px;
+    background-color: transparent;
+    color: rgb(62, 61, 74);
+    font-size: 14px;
+    border: 1px solid rgb(85, 84, 84);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+#submitBtn:hover{
+    background-color: rgb(194, 196, 203);
+  
+}
+
+#closeBtn:hover {
+    background-color: rgb(194, 196, 203);
+
+}
